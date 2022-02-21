@@ -4,6 +4,7 @@ var jsonRaw = [
     "Title": "Good News",
     "Author": "Thomas Percival",
     "Topic": "Good",
+    "Body": "Lorus Epsum",
     "Date": "21/02/2022",
         },
     { 
@@ -11,6 +12,7 @@ var jsonRaw = [
     "Title": "Good News",
     "Author": "Thomas Percival",
     "Topic": "Good",
+    "Body": "Lorus Epsum",
      "Date": "21/02/2022",
         },
     { 
@@ -18,6 +20,7 @@ var jsonRaw = [
     "Title": "Good News",
     "Author": "Marina Bostan",
     "Topic": "Good",
+    "Body": "Lorus Epsum",
      "Date": "21/02/2022",
         },
   { 
@@ -25,6 +28,7 @@ var jsonRaw = [
     "Title": "Amazing",
     "Author": "Marina Bostan",
     "Topic": "Good",
+    "Body": "Lorus Epsum",
      "Date": "21/02/2022",
         },
     { 
@@ -32,6 +36,7 @@ var jsonRaw = [
     "Title": "Fantastic",
     "Author": "Gizmo Percival",
     "Topic": "Good",
+    "Body": "Lorus Epsum",
      "Date": "21/02/2022",
         },
      { 
@@ -39,6 +44,7 @@ var jsonRaw = [
     "Title": "Wow",
     "Author": "Gizmo Percival",
     "Topic": "Good",
+    "Body": "Lorus Epsum",
      "Date": "21/02/2022",
      }
 ];
