@@ -1,22 +1,15 @@
 import SwiftUI
 
-//Creates the view of the expanded article. This shows when an article is clicked, not an image.
-struct PostExpandedView: View {
+//Creates an expanded view of the article if it is a video. 
+struct VideoExpandedView: View {
     var article: Article
-    
     
     var body: some View {
         ScrollView {
             
-            AsyncImage(url: URL(string: article.Image)){ image in image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                Image(systemName: "photo")
-                    .imageScale(.large)
-                    .foregroundColor(.gray)
-            }
-            .frame(width: 100, height: 200, alignment: .center)
+            Image(article.Image)
+                .resizable()
+                .frame(height: 600)
             
             VStack(alignment: .leading) {
                 

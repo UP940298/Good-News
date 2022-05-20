@@ -1,43 +1,39 @@
 import SwiftUI
 
+//Creates the item that is rendered in the list on the main screen.
 struct PostRow: View {
+    //Create an article variable.
     var article: Article
     
     var body: some View {
         ZStack{
             HStack{
-                Image("")
-                    .frame(width: 100, height: 100)
+                //Horizontally aligned image and title of the headline.
+                AsyncImage(url: URL(string: article.Image)){ image in image
+                        .resizable()
+                } placeholder: {
+                    Image(systemName: "photo")
+                        .imageScale(.large)
+                        .foregroundColor(.gray)
+                }
+                .frame(width: 100, height: 100)
                     .offset()
                 Text(article.Title)
                     .font(Font.custom("Arial", size: 15))
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .offset(x: 0, y:0)
                     .fixedSize(horizontal: false, vertical: true)
                     .frame(width:250)
                     .multilineTextAlignment(.center)
                     .padding()
             }
-            .background(.gray)
-            .frame(width: 390, height: 100)
+            .background(.white)
+            .frame(width: 380, height: 100)
             .fixedSize(horizontal: true, vertical: true)
-            Text(article.ArType)
-                .font(Font.custom("Arial", size: 10))
-                .foregroundColor(.white)
-                .offset(x: -70, y:-40)
-            Text(article.Date)
-                .font(Font.custom("Arial", size: 10))
-                .foregroundColor(.white)
-                .offset(x: 160, y: -40)
+            .cornerRadius(15)
+            .clipped()
+            .shadow(color: .gray, radius: 10, x: 0, y: 5)
         }
+        .padding(.bottom, 10)
     }
 }
-
-//struct PostRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Group {
-//            PostRow(article: articles[8])
-//            PostRow(article: articles[0])
-//        }
-//    }
-//}

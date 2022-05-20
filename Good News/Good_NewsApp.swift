@@ -1,6 +1,7 @@
 import SwiftUI
 import Firebase
 
+//Initialize Firebase database
 class MyAppDelegate: NSObject, UIApplicationDelegate {
     func application(_ app: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
